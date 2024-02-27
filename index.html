@@ -1,0 +1,83 @@
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Natdogs viewer</title>
+        <link href="./css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="./css/bootstrap-icons.min.css" rel="stylesheet">
+        <link href="./css/index.css?ts=1708944193550" rel="stylesheet">
+        <script src="./js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-dark text-center">
+        <h2 class="pt-2">Natdogs viewer</h2>
+
+        <div class="container mb-5">
+            <div class="alert alert-info" role="alert">
+                <span>
+                    <i class="info-btn bi bi-info-circle-fill"></i>
+                </span>
+
+                This is an Alpha version and it's possible that the information may not be accurate or updated in real time.<br /><br />
+                DISCLAIMER: Anything you do after this is 100% on you. Any lost funds, failed investments, or other unforeseen consequences are 100% on you.<br />
+                I am not responsible in any way. <strong>Turn away if you do not accept 100% responsibility</strong>.<br /><br />
+                
+                Note: This is Natdogs on Dogecoin 🐶<br /><br />
+
+                That said, happy filtering! Cheers <a href="https://x.com/crypt0biwan" target="_blank">Obi</a> ✌️ (<a href="https://github.com/crypt0biwan/natdogs-viewer/" target="_blank">source</a>)
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-4 col-xxl-3">
+                    <div id="filter" class="mb-4">
+                        <h4 class="text-start">Filter traits</h4>
+
+                        <form id="filter-form"></form>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-xxl-9">
+                    <div class="pagination-nav"></div>
+
+                    <h3 id="filtered-amount" class="mb-3"></h3>
+                    <div id="filter-choices" class="mb-3"></div>
+
+                    <div class="row">
+                        <div class="col">
+                            <form>
+                                <div class="row g-3 mb-2 align-items-center">
+                                    <div class="col-12 px-5">
+                                        <input type="text" required class="form-control form-control-inline" id="search" placeholder="Filter Natdogid (e.g. 888)">
+                                    </div>
+                                </div>
+                            </form>                    
+                        </div>
+                    </div>
+
+                    <div id="result" class="mb-4">Loading data..</div>
+                    
+                    <div class="pagination-nav"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal-xl fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                   
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/index.js?ts=1708944193550"></script>
+    </body>
+</html>
